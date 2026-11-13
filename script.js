@@ -61,7 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (entries[0].isIntersecting && !counterStarted) {
           counterStarted = true;
           counters.forEach((counter) => {
-            const target = +counter.getAttribute("data-target");
+  const target = +counter.getAttribute("data-target");
+  counter.textContent = 0;   // <- tambahkan baris ini
             const duration = 1200;
             const stepTime = Math.max(Math.floor(duration / target), 25);
             let current = 0;
@@ -79,6 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       { threshold: 0.4 }
     );
+
+    
 
     counterObserver.observe(statsSection);
   }

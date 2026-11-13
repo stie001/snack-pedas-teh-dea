@@ -15,7 +15,7 @@
     <link rel="canonical" href="https://snack-pedas-teh-dea.vercel.app/">
 
     <!-- Favicon / Logo di Tab Browser -->
-    <link rel="icon" type="image/jpg" href="logo.png">
+    <link rel="icon" type="image/png" href="logo.png">
 
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:type" content="website">
@@ -34,6 +34,9 @@
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
   <!-- Bootstrap Icons -->
@@ -49,13 +52,13 @@
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-3" href="#beranda">
         <!-- Ganti src dengan file logo asli Snack's Pedas Teh Dea -->
-        <img src="logo.png" alt="Logo Snack's Pedas Teh Dea">
+        <img src="logo.png" alt="Logo Snack Pedas Teh Dea">
         <div class="brand-text d-none d-sm-block">
-          <span class="d-block fw-bold lh-1">SNACK'S PEDAS</span>
+          <span class="d-block fw-bold lh-1">SNACK PEDAS</span>
           <small class="text-danger fw-semibold">TEH DEA • SEJAK 2020</small>
         </div>
       </a>
-      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Buka menu navigasi">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -81,12 +84,12 @@
     <div class="container hero-content">
       <div class="row align-items-center g-5">
         <!-- Kolom Kiri -->
-        <div class="col-lg-6 reveal">
+        <div class="col-lg-6">
           <div class="hero-pill mb-3">
             <i class="bi bi-fire text-danger me-1"></i> Cemilan Lokal, Rasa Maksimal
           </div>
           <h1 class="hero-title">
-            SNACK'S<br>
+            SNACK<br>
             <span class="text-merah">PEDAS</span><br>
             TEH DEA
           </h1>
@@ -103,7 +106,7 @@
                 <rect x="10" y="32" width="80" height="82" rx="14" fill="#b80000"/>
               </svg>
               <div class="stat-text">
-                <div class="stat-number counter" data-target="6">0</div>
+                <div class="stat-number counter" data-target="6">6</div>
                 <div class="stat-label">Jenis</div>
               </div>
             </div>
@@ -115,7 +118,7 @@
                 <rect x="10" y="32" width="80" height="82" rx="14" fill="#111111"/>
               </svg>
               <div class="stat-text">
-                <div class="stat-number counter" data-target="10">0</div>
+                <div class="stat-number counter" data-target="10">10</div>
                 <div class="stat-label">Mitra</div>
               </div>
             </div>
@@ -127,7 +130,7 @@
                 <rect x="10" y="32" width="80" height="82" rx="14" fill="#b80000"/>
               </svg>
               <div class="stat-text">
-                <div class="stat-number"><span class="counter" data-target="100">0</span>+</div>
+                <div class="stat-number"><span class="counter" data-target="100">100</span>+</div>
                 <div class="stat-label">Terjual</div>
               </div>
             </div>
@@ -135,10 +138,10 @@
         </div>
 
         <!-- Kolom Kanan: Foto Makaroni Pedas -->
-        <div class="col-lg-6 reveal delay-1">
+        <div class="col-lg-6">
           <div class="hero-image-wrapper">
             <!-- Ganti src dengan foto makaroni pedas asli -->
-            <img src="main1.webp" alt="Makaroni Pedas Teh Dea" class="hero-image">
+            <img src="main1.webp" alt="Kibang Extra Pedas" class="hero-image" fetchpriority="high">
             
             <!-- Badge Tag di Pojok Foto -->
             <div class="hero-photo-caption">
@@ -158,10 +161,10 @@
   <section class="tagline-section reveal">
     <div class="container">
       <div class="tagline-divider mx-auto mb-3"></div>
-      <p class="tagline-text">
-        Cemilan <span>Pedas</span><br>
-        khas Jawa Barat
-      </p>
+      <h2 class="tagline-text">
+  Cemilan <span>Pedas</span><br>
+  khas Jawa Barat
+</h2>
     </div>
   </section>
 
@@ -180,7 +183,7 @@
             <div class="product-img-box">
               <span class="spice-badge"><i class="bi bi-fire"></i> Best Seller</span>
               <!-- Ganti src dengan foto kemasan Makaroni Bantat -->
-              <img src="basreng gepeng.jpeg" alt="Makaroni Bantat">
+              <img src="basreng-koin.jpeg" alt="Basreng Koin pedas renyah Snack Pedas Teh Dea" loading="lazy">
             </div>
             <div class="product-card-body">
               <h3 class="product-title">BASRENG KOIN</h3>
@@ -195,7 +198,7 @@
             <div class="product-img-box">
               <span class="spice-badge"><i class="bi bi-fire"></i> Favorit</span>
               <!-- Ganti src dengan foto kemasan Basreng -->
-              <img src="kibang.jpg" alt="Basreng">
+              <img src="kibang.jpg" alt="Kibang keripik bawang pedas gurih" loading="lazy">
             </div>
             <div class="product-card-body">
               <h3 class="product-title">KIBANG (KERIPIK BAWANG)</h3>
@@ -210,7 +213,7 @@
             <div class="product-img-box">
               <span class="spice-badge"><i class="bi bi-fire"></i> Kriuk</span>
               <!-- Ganti src dengan foto kemasan Mie Lidi -->
-              <img src="lidi.jpeg" alt="Mie Lidi">
+              <img src="lidi.jpeg" alt="Mie Lidi" loading="lazy">
             </div>
             <div class="product-card-body">
               <h3 class="product-title">MIE LIDI</h3>
@@ -224,7 +227,7 @@
             <div class="product-img-box">
               <span class="spice-badge"><i class="bi bi-fire"></i> Kriuk</span>
               <!-- Ganti src dengan foto kemasan Basreng -->
-              <img src="bantat.jpg" alt="Basreng">
+              <img src="bantat.jpg" alt="Makaroni Bantat pedas daun jeruk" loading="lazy">
             </div>
             <div class="product-card-body">
               <h3 class="product-title">MAKARONI BANTAT</h3>
@@ -238,7 +241,7 @@
             <div class="product-img-box">
               <span class="spice-badge"><i class="bi bi-fire"></i> Kriuk</span>
               <!-- Ganti src dengan foto kemasan Basreng -->
-              <img src="cikruh.jpg" alt="Basreng">
+              <img src="cikruh.jpg" alt="Makaroni Cikruh pedas daun jeruk" loading="lazy">
             </div>
             <div class="product-card-body">
               <h3 class="product-title">MAKARONI CIKRUH</h3>
@@ -252,7 +255,7 @@
             <div class="product-img-box">
               <span class="spice-badge"><i class="bi bi-fire"></i> Kriuk</span>
               <!-- Ganti src dengan foto kemasan Basreng -->
-              <img src="basreng.jpeg" alt="Basreng">
+              <img src="basreng.jpeg" alt="Basreng" loading="lazy">
             </div>
             <div class="product-card-body">
               <h3 class="product-title">BASRENG</h3>
@@ -278,7 +281,7 @@
           </h2>
           
           <p class="about-fs-desc mb-0">
-            Berawal dari kecintaan meracik bumbu pedas gurih dengan rempah khas Jawa Barat, Snack's Pedas Teh Dea konsisten menghadirkan cemilan berkualitas tinggi yang selalu bikin ketagihan di setiap gigitan.
+            Berawal dari kecintaan meracik bumbu pedas gurih dengan rempah khas Jawa Barat, Snack Pedas Teh Dea konsisten menghadirkan cemilan berkualitas tinggi yang selalu bikin ketagihan di setiap gigitan.
           </p>
         </div>
       </div>
@@ -302,7 +305,7 @@
       <div class="bulk-order-box reveal delay-1">
         <h4>Mau Order Banyak?<br>Chat kami!</h4>
         <p class="mb-4 opacity-75 small">Tersedia harga spesial untuk pembelian grosir, acara, maupun gabung mitra reseller.</p>
-        <a href="https://wa.me/62895378590701?text=Halo%20Teh%20Dea,%20saya%20mau%20tanya%20untuk%20order%20banyak%20Snack's%20Pedas" target="_blank" class="btn-wa">
+        <a href="https://wa.me/62895378590701?text=Halo%20Teh%20Dea,%20saya%20mau%20tanya%20untuk%20order%20banyak%20Snack%20Pedas" target="_blank" class="btn-wa">
           <i class="bi bi-whatsapp fs-4"></i> Kirim Pesan
         </a>
       </div>
