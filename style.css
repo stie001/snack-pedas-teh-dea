@@ -17,6 +17,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Sesuaikan angka 70px dengan tinggi navbar kamu */
+section {
+  scroll-margin-top: 70px; 
+}
+
 /* Navbar */
 .navbar {
   padding: 1rem 0;
