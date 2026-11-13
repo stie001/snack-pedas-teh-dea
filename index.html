@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snack's Pedas Teh Dea</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: Plus Jakarta Sans & Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- File CSS Kustom -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. HEADER / NAVBAR -->
+  <nav class="navbar navbar-expand-md sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="#beranda">
+        <!-- Ganti src dengan file logo asli Snack's Pedas Teh Dea -->
+        <img src="logo.png" alt="Logo Snack's Pedas Teh Dea">
+        <div class="brand-text d-none d-sm-block">
+          <span class="d-block fw-bold lh-1">SNACK'S PEDAS</span>
+          <small class="text-danger fw-semibold">TEH DEA • SEJAK 2020</small>
+        </div>
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-md-center">
+          <li class="nav-item"><a class="nav-link active" href="#beranda">BERANDA</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produk">PRODUK</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">TENTANG</a></li>
+          <li class="nav-item ms-md-3 mt-2 mt-md-0">
+            <a class="btn btn-kontak-nav" href="#kontak">KONTAK <i class="bi bi-arrow-up-right ms-1"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. HERO SECTION -->
+  <section id="beranda" class="hero-section">
+    <!-- Siluet Cabai Samar di Latar Kiri -->
+    <svg class="chili-bg-left" viewBox="0 0 200 300" fill="#111111">
+      <path d="M90,20 C95,5 110,5 105,25 C100,45 115,50 115,50 C140,80 145,170 95,250 C70,290 40,295 35,290 C30,285 55,260 65,220 C80,160 65,80 85,50 C85,50 85,35 90,20 Z"/>
+    </svg>
+
+    <div class="container hero-content">
+      <div class="row align-items-center g-5">
+        <!-- Kolom Kiri -->
+        <div class="col-lg-6 reveal">
+          <div class="hero-pill mb-3">
+            <i class="bi bi-fire text-danger me-1"></i> Cemilan Lokal, Rasa Maksimal
+          </div>
+          <h1 class="hero-title">
+            SNACK'S<br>
+            <span class="text-merah">PEDAS</span><br>
+            TEH DEA
+          </h1>
+          <p class="hero-subtitle mt-3">
+            Teman ngemil paling seru buat pecinta sensasi pedas gurih. Bumbu melimpah dengan racikan rempah khas Jawa Barat.
+          </p>
+
+          <!-- 3 Statistik Ikon Tas Belanja -->
+          <div class="d-flex gap-3 gap-sm-4 flex-wrap stats-container">
+            <!-- Tas 1: Merah -->
+            <div class="bag-stat">
+              <svg viewBox="0 0 100 120">
+                <path d="M32,35 C32,12 68,12 68,35" fill="none" stroke="#b80000" stroke-width="6"/>
+                <rect x="10" y="32" width="80" height="82" rx="14" fill="#b80000"/>
+              </svg>
+              <div class="stat-text">
+                <div class="stat-number counter" data-target="6">0</div>
+                <div class="stat-label">Jenis</div>
+              </div>
+            </div>
+
+            <!-- Tas 2: Hitam -->
+            <div class="bag-stat">
+              <svg viewBox="0 0 100 120">
+                <path d="M32,35 C32,12 68,12 68,35" fill="none" stroke="#111111" stroke-width="6"/>
+                <rect x="10" y="32" width="80" height="82" rx="14" fill="#111111"/>
+              </svg>
+              <div class="stat-text">
+                <div class="stat-number counter" data-target="10">0</div>
+                <div class="stat-label">Mitra</div>
+              </div>
+            </div>
+
+            <!-- Tas 3: Merah -->
+            <div class="bag-stat">
+              <svg viewBox="0 0 100 120">
+                <path d="M32,35 C32,12 68,12 68,35" fill="none" stroke="#b80000" stroke-width="6"/>
+                <rect x="10" y="32" width="80" height="82" rx="14" fill="#b80000"/>
+              </svg>
+              <div class="stat-text">
+                <div class="stat-number"><span class="counter" data-target="100">0</span>+</div>
+                <div class="stat-label">Terjual</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Foto Makaroni Pedas -->
+        <div class="col-lg-6 reveal delay-1">
+          <div class="hero-image-wrapper">
+            <!-- Ganti src dengan foto makaroni pedas asli -->
+            <img src="main.jpg" alt="Makaroni Pedas Teh Dea" class="hero-image">
+            
+            <!-- Badge Tag di Pojok Foto -->
+            <div class="hero-photo-caption">
+              <small class="text-uppercase tracking-wider d-block opacity-75">Favorit Pelanggan</small>
+              <span class="fw-bold fs-5">Makaroni Cikruh Extra Pedas</span>
+            </div>
+
+            <!-- Ornamen Bulat Merah-Putih khas desain Canva -->
+            <div class="hero-badge-ornament">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. TAGLINE PENGANTAR -->
+  <section class="tagline-section reveal">
+    <div class="container">
+      <div class="tagline-divider mx-auto mb-3"></div>
+      <p class="tagline-text">
+        Cemilan <span>Pedas</span><br>
+        khas Jawa Barat
+      </p>
+    </div>
+  </section>
+
+  <!-- 4. SECTION PRODUK (3 KARTU) -->
+  <section id="produk" class="produk-section">
+    <!-- Siluet Cabai Kanan -->
+    <svg class="chili-bg-right" viewBox="0 0 200 300" fill="#111111">
+      <path d="M90,20 C95,5 110,5 105,25 C100,45 115,50 115,50 C140,80 145,170 95,250 C70,290 40,295 35,290 C30,285 55,260 65,220 C80,160 65,80 85,50 C85,50 85,35 90,20 Z"/>
+    </svg>
+
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <!-- Produk 1 -->
+        <div class="col-md-4 col-sm-6 reveal">
+          <div class="product-card">
+            <div class="product-img-box">
+              <span class="spice-badge"><i class="bi bi-fire"></i> Best Seller</span>
+              <!-- Ganti src dengan foto kemasan Makaroni Bantat -->
+              <img src="bantat.jpg" alt="Makaroni Bantat">
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-title">MAKARONI BANTAT</h3>
+              <p class="product-desc">Renyah, bantat pas, berpadu bumbu pedas daun jeruk melimpah.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="col-md-4 col-sm-6 reveal delay-1">
+          <div class="product-card">
+            <div class="product-img-box">
+              <span class="spice-badge"><i class="bi bi-fire"></i> Favorit</span>
+              <!-- Ganti src dengan foto kemasan Basreng -->
+              <img src="basreng.jpeg" alt="Basreng">
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-title">BASRENG</h3>
+              <p class="product-desc">Irisan bakso goreng renyah kriuk dengan sensasi pedas nagih.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="col-md-4 col-sm-6 reveal delay-2">
+          <div class="product-card">
+            <div class="product-img-box">
+              <span class="spice-badge"><i class="bi bi-fire"></i> Kriuk</span>
+              <!-- Ganti src dengan foto kemasan Mie Lidi -->
+              <img src="lidi.jpeg" alt="Mie Lidi">
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-title">MIE LIDI</h3>
+              <p class="product-desc">Cemilan legendaris renyah gurih dengan balutan bumbu pedas khas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 reveal delay-1">
+          <div class="product-card">
+            <div class="product-img-box">
+              <span class="spice-badge"><i class="bi bi-fire"></i> Favorit</span>
+              <!-- Ganti src dengan foto kemasan Basreng -->
+              <img src="basreng gepeng.jpeg" alt="Basreng">
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-title">BASRENG GEPENG</h3>
+              <p class="product-desc">Irisan bakso goreng renyah kriuk dengan sensasi pedas nagih.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+ <!-- 5. SECTION TENTANG KAMI (FULL BACKGROUND PHOTO) -->
+  <section id="tentang" class="about-fullscreen-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center reveal">
+          <span class="about-badge-top mb-3 d-inline-block">SINCE 2020</span>
+          
+          <h2 class="about-fs-title mb-4">
+            Bisnis ini tumbuh dan berkembang oleh Deanti Rahayu atau ikonik dengan <span>"Teh Dea"</span>
+          </h2>
+          
+          <p class="about-fs-desc mb-0">
+            Berawal dari kecintaan meracik bumbu pedas gurih dengan rempah khas Jawa Barat, Snack's Pedas Teh Dea konsisten menghadirkan cemilan berkualitas tinggi yang selalu bikin ketagihan di setiap gigitan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SECTION MARKETPLACE & KONTAK WA -->
+  <section id="kontak" class="order-section">
+    <div class="container reveal">
+      <div class="beli-title">Beli di:</div>
+
+      <!-- Ikon Bulat Shopee, TikTok Shop, Tokopedia -->
+      <div class="marketplace-links">
+        <a href="https://shopee.co.id" target="_blank" class="mp-btn mp-shopee" title="Beli di Shopee">
+          <i class="bi bi-bag-fill"></i>
+          <span>Shopee</span>
+        </a>
+        <a href="https://www.tiktok.com" target="_blank" class="mp-btn mp-tiktok" title="Beli di TikTok Shop">
+          <i class="bi bi-tiktok"></i>
+          <span>TikTok</span>
+        </a>
+        <a href="https://www.tokopedia.com" target="_blank" class="mp-btn mp-tokped" title="Beli di Tokopedia">
+          <i class="bi bi-shop"></i>
+          <span>Tokopedia</span>
+        </a>
+      </div>
+
+      <!-- Kotak Abu-abu Order Banyak -->
+      <div class="bulk-order-box reveal delay-1">
+        <h4>Mau Order Banyak?<br>Chat kami!</h4>
+        <p class="mb-4 opacity-75 small">Tersedia harga spesial untuk pembelian grosir, acara, maupun gabung mitra reseller.</p>
+        <a href="https://wa.me/62895378590701?text=Halo%20Teh%20Dea,%20saya%20mau%20tanya%20untuk%20order%20banyak%20Snack's%20Pedas" target="_blank" class="btn-wa">
+          <i class="bi bi-whatsapp fs-4"></i> Kirim Pesan
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FOOTER MERAH PEKAT -->
+  <footer>
+    <div class="container">
+      <p class="fw-bold fs-5 mb-1">SNACK'S PEDAS TEH DEA</p>
+      <p class="small opacity-75 mb-0">© 2026 Snack's Pedas Teh Dea. Cemilan Pedas Khas Jawa Barat.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- File JavaScript Kustom -->
+  <script src="script.js"></script>
+</body>
+</html>
