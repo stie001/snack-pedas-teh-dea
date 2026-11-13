@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://snack-pedas-teh-dea.vercel.app/sitemap.xml
